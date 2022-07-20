@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@500&family=Rubik:ital@1&display=swap');
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.5;
+    color: #212729;
+}
+
+/* -------------
+top header section
+---------- */
+h1 {
+    font-size: 4rem;
+    color: #343a40;
+    animation: names 2s ease-in;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+img {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    background-color: #2db875e6;
+    border-radius: 15px;
+    margin: 5rem 0;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+/*----------
+ start animation
+ ----------- */
+@keyframes names {
+    from {
+        transform: scalX(1);
+    }
+
+    to {
+        transform: scaleX(1.5);
+    }
+}
+
+/*-----------
+ finish animation
+ ---------- */
+.container .half-width {
+    width: 50%;
+}
+
+.link {
+    display: inline-block;
+    background-color: #69f42e;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 1s ease-in-out;
+}
+
+.link:hover {
+    transform: translateX(40px);
+}
+
+.link span {
+    margin-left: 0.5rem;
+}
+
+/* -----------
+aside navbar
+------- */
+aside {
+    background-color: #4171a1;
+    max-width: 300px;
+    max-height: 300px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.nav-link {
+    background-color: white;
+    color: #4f738f;
+    margin: 1rem;
+    width: 220px;
+}
+
+#blog {
+    background-color: #f7f149;
+    color: white;
+}
+
+/* -----------
+style aside 
+------- */
+.main-section {
+    display: flex;
+    gap: 2rem;
+    margin: 5rem 0;
+    /* align-items: center; */
+}
+
+/*--------
+ game style
+ ------- */
+
+.games {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.games-details {
+    box-shadow: 2px 2px 12px #dadee2;
+    border-radius: 12px;
+    background-color: #dadee2;
+    padding: 1rem;
+}
+
+.games-details h4 {
+    margin-bottom: 0.8rem;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    opacity: 0.75;
+}
+
+.icons span {
+    margin-right: 0.8rem;
+}
+
+.switch {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    margin: 0.8rem;
+}
+
+/* --------
+button hidden
+-------- */
+.button-hidden {
+    display: none;
+}
+
+/* ----------
+football website
+------------- */
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.games-flags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.games-flags img {
+    border-radius: 0;
+}
+
+.games-time {
+    opacity: 0.75;
+}
+
+/* -----------
+footer
+------------ */
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 5rem;
+    text-align: center;
+}
+
+hr {
+    margin: 3rem;
+    opacity: 0.25;
+    max-width: 900px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
+/* --------
+Social Icons style
+------------ */
+.social-icons ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 3rem;
+}
+
+.social-icons a {
+    background-color: rgb(68, 220, 76);
+    padding: 0.7rem;
+    border-radius: 100px;
+}

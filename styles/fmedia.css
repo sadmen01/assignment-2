@@ -1,0 +1,150 @@
+/*--------------
+phone respo
+------------ */
+@media screen and (max-width: 576px) {
+
+    /* -----
+    header
+    ------ */
+
+    .container {
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        padding: 0.5rem 1rem;
+    }
+
+    .container .half-width {
+        width: 100%;
+    }
+
+    .link {
+        padding: 0.5rem 1rem;
+
+        margin: 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .head-text p {
+        font-size: 1rem;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* -----------
+    aside
+    ------------------ */
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        background-color: white;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-left: 5rem;
+    }
+
+    .nav-link {
+        border: 1px solid gray;
+        padding: 1rem 2rem;
+    }
+
+    .games {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .games-details {
+        width: 100%;
+    }
+
+    .games-details img {
+        width: 100%;
+    }
+
+    /* ------
+    footer
+    ------ */
+    .footer {
+        text-align: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-nav ul li a {
+        text-decoration: none;
+        color: white;
+
+        opacity: 0.5;
+        font-size: 0.9rem;
+    }
+
+    .button-hidden {
+        display: none;
+    }
+}
+
+/* ------------
+tab respo
+ --------------*/
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .games {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    aside {
+        background-color: white;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar ul li a {
+        border: 1px solid gray;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ------
+    hidden button for tab
+    ------------ */
+    .button-hidden {
+        display: block;
+
+        background-color: #f0c93e;
+        padding: 1rem 2rem;
+        border-radius: 15px;
+
+        color: white;
+        font-weight: 700;
+        text-align: center;
+        margin: 2rem auto;
+    }
+}
